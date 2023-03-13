@@ -1,0 +1,6 @@
+### IntelliJ template
+**/out/
+**/.idea_modules/
+**/.idea/
+**/*.iml
+**/atlassian-ide-plugin.xml
