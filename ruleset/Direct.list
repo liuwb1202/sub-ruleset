@@ -13,6 +13,7 @@ DOMAIN-SUFFIX,gitee.com
 DOMAIN-SUFFIX,51data.org
 DOMAIN-SUFFIX,ruike1.com
 
+
 #飞书
 DOMAIN-SUFFIX,feishu.cn
 
@@ -64,3 +65,6 @@ DOMAIN-SUFFIX,postmanlabs.com
 DOMAIN-SUFFIX,pstmn.io
 DOMAIN-SUFFIX,seata.io
 DOMAIN-SUFFIX,nexconvert.com
+
+DOMAIN-SUFFIX,nvidia.com
+DOMAIN-SUFFIX,nvidia.cn
