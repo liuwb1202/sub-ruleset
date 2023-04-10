@@ -22,6 +22,8 @@ dns:
     - 1.0.0.1
   ipv6: false
   enhanced-mode: fake-ip
+  fake-ip-range: 28.0.0.1/8
+  use-hosts: true
   fake-ip-filter:
     - "*.lan"
     - stun.*.*.*
@@ -98,6 +100,7 @@ dns:
     - https://223.6.6.6/dns-query
     - https://rubyfish.cn/dns-query
     - https://dns.pub/dns-query
+    - https://dns.alidns.com/dns-query
   fallback:
     - https://dns.rubyfish.cn/dns-query
     - https://public.dns.iij.jp/dns-query
