@@ -16,7 +16,7 @@ profile:
   tracing: true
 dns:
   enable: true
-  listen: '127.0.0.1:8853'
+  listen: '127.0.0.1:53'
   default-nameserver:
     - 223.5.5.5
     - 1.0.0.1
