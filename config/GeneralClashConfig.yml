@@ -22,7 +22,6 @@ dns:
     - 1.0.0.1
   ipv6: false
   enhanced-mode: fake-ip
-  fake-ip-range: 28.0.0.1/8
   use-hosts: true
   fake-ip-filter:
     - "*.lan"
