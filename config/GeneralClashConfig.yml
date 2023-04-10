@@ -6,9 +6,6 @@ allow-lan: false
 mode: Rule
 log-level: info
 ipv6: false
-hosts:
-  services.googleapis.cn: 216.58.200.67
-  www.google.cn: 216.58.200.67
 external-controller: 0.0.0.0:9090
 clash-for-android:
   append-system-dns: false
