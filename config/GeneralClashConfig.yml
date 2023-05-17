@@ -13,7 +13,7 @@ dns:
   enable: true
   ipv6: false
   # 模式：redir-host或fake-ip
-  enhanced-mode: redir-host
+  enhanced-mode: fake-ip
   use-hosts: true
   listen: '127.0.0.1:53'
   fake-ip-range: 198.18.0.1/16
