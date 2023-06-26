@@ -72,6 +72,10 @@ DOMAIN-SUFFIX,nvidia.cn
 DOMAIN-SUFFIX,ikuai8.com
 DOMAIN-SUFFIX,onethingcloud.com
 DOMAIN-SUFFIX,codelife.cc
+# 雷蛇
+DOMAIN-SUFFIX,pubsub.razersynapse.com
+DOMAIN-SUFFIX,razerzone.com
+DOMAIN-SUFFIX,razer.com
 
 DOMAIN-SUFFIX,firefox.settings.services.mozilla.com
 DOMAIN-SUFFIX,r3.o.lencr.org
@@ -103,3 +107,9 @@ DOMAIN-SUFFIX,nelreports.net
 DOMAIN-SUFFIX,ping.sx
 DOMAIN-SUFFIX,clonoth.com
 DOMAIN-SUFFIX,hdslb.com
+DOMAIN-SUFFIX,wpxz.org
+DOMAIN-SUFFIX,a.nel.cloudflare.com
+DOMAIN-SUFFIX,sb.adtidy.org
+DOMAIN-SUFFIX,crl3.digicert.com
+DOMAIN-SUFFIX,1337.abcvg.info
+DOMAIN-SUFFIX,lenovo.com
