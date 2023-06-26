@@ -73,9 +73,11 @@ DOMAIN-SUFFIX,ikuai8.com
 DOMAIN-SUFFIX,onethingcloud.com
 DOMAIN-SUFFIX,codelife.cc
 # 雷蛇
-DOMAIN-SUFFIX,pubsub.razersynapse.com
+DOMAIN-KEYWORD,razer
+DOMAIN-SUFFIX,razersynapse.com
 DOMAIN-SUFFIX,razerzone.com
 DOMAIN-SUFFIX,razer.com
+DOMAIN-SUFFIX,razerapi.com
 
 DOMAIN-SUFFIX,firefox.settings.services.mozilla.com
 DOMAIN-SUFFIX,r3.o.lencr.org
