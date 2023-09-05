@@ -40,10 +40,6 @@ DOMAIN-SUFFIX,miyun9876.xyz
 # 阿里云
 DOMAIN-SUFFIX,mirrors.aliyun.com
 DOMAIN-SUFFIX,mirror.aliyuncs.com
-
-# 学术网站
-DOMAIN-SUFFIX,nih.gov
-
 # 端口
 DST-PORT,22
 
