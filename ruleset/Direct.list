@@ -48,16 +48,6 @@ DOMAIN-SUFFIX,razerzone.com
 DOMAIN-SUFFIX,razer.com
 DOMAIN-SUFFIX,razerapi.com
 
-# 程序
-PROCESS-NAME,WeChat.exe
-PROCESS-NAME,WeChatBrowser.exe
-PROCESS-NAME,WeChatAppEx.exe
-PROCESS-NAME,WXWork.exe
-PROCESS-NAME,WXDrive.exe
-PROCESS-NAME,WeMail.exe
-PROCESS-NAME,WXWorkWeb.exe
-PROCESS-NAME,QQ.exe
-
 # 漏网之鱼
 DOMAIN-SUFFIX,edkkb.cf
 DOMAIN-SUFFIX,bootstrapcdn.com
