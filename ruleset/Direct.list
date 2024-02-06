@@ -39,7 +39,8 @@ DOMAIN-SUFFIX,mirrors.aliyun.com
 DOMAIN-SUFFIX,mirror.aliyuncs.com
 
 # 端口
-#DST-PORT,22
+DST-PORT,22
+DST-PORT,65080
 
 # 雷蛇
 DOMAIN-KEYWORD,razer
