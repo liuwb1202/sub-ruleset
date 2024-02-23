@@ -132,7 +132,7 @@ clash-for-android:
   append-system-dns: false
 cfw-proxies-order: default
 cfw-latency-timeout: 3000
-cfw-latency-url: http://www.gstatic.com/generate_204
+cfw-latency-url: http://www.google.com/generate_204
 cfw-conn-break-strategy:
   proxy: none
   profile: true
