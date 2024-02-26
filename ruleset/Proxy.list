@@ -8,7 +8,3 @@ DOMAIN-SUFFIX,hepengwei.cn
 DOMAIN-SUFFIX,msedgeextensions.sf.tlu.dl.delivery.mp.microsoft.com
 DOMAIN-SUFFIX,xn--ngstr-lra8j.com
 DOMAIN-SUFFIX,services.googleapis.cn
-IP-CIDR,18.138.57.128/32,no-resolve
-IP-CIDR,175.41.133.171/32,no-resolve
-IP-CIDR,52.221.111.0/32,no-resolve
-IP-CIDR,46.137.239.213/32,no-resolve
