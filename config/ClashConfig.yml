@@ -42,6 +42,8 @@ dns:
       - '+.nflxvideo.net'
       - '+.amazonaws.com'
       - '+.amazon.com'
+      - '+.github.com'
+      - '+.githubusercontent.com'
     geoip: true
     geoip-code: CN
     geosite:
