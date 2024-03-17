@@ -55,6 +55,9 @@ dns:
       - '+.amazon.com'
       - '+.github.com'
       - '+.githubusercontent.com'
+      - "+.googlevideo.com"
+      - "+.msftconnecttest.com"
+      - "+.msftncsi.com"
     geoip: true
     geoip-code: CN
     geosite:
