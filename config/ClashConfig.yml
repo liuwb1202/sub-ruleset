@@ -10,7 +10,6 @@ dns:
     - tls://8.8.8.8:853
     - tls://1.1.1.1:853
     - tls://dns.google:853
-    - tls://1dot1dot1dot1.cloudflare-dns.com:853
   nameserver-policy:
     '+.baidu.com': '114.114.114.114'
     '+.qq.com': '119.29.29.29'
@@ -27,7 +26,6 @@ dns:
       - tls://8.8.8.8:853
       - tls://1.1.1.1:853
       - tls://dns.google:853
-      - tls://1dot1dot1dot1.cloudflare-dns.com:853
   fallback-filter:
     domain:
       - '+.google.com'
