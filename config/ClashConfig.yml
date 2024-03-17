@@ -7,22 +7,20 @@ dns:
     - 119.29.29.29
     - 114.114.114.114
     - 223.6.6.6
-    - https://dns.alidns.com/dns-query
-    - tls://dns.alidns.com
     - 119.28.28.28
+    - 114.114.115.115
+    - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
     - https://dns.pub/dns-query
-    - tls://dot.pub
-    - 114.114.115.115
   fallback:
-    - tls://8.8.8.8:853
-    - tls://1.1.1.1:853
-    - https://dns.cloudflare.com/dns-query
-    - tls://1.0.0.1:853
-    - tls://1dot1dot1dot1.cloudflare-dns.com
-    - tls://8.8.4.4:853
-    - https://dns.google/dns-query
+    - tls://8.8.8.8
+    - tls://1.1.1.1
+    - tls://8.8.4.4
+    - tls://1.0.0.1
     - tls://dns.google
+    - tls://1dot1dot1dot1.cloudflare-dns.com
+    - https://dns.google/dns-query
+    - https://dns.cloudflare.com/dns-query
   nameserver-policy:
     '+.baidu.com': '114.114.114.114'
     '+.qq.com': '119.29.29.29'
@@ -36,22 +34,20 @@ dns:
       - 119.29.29.29
       - 114.114.114.114
       - 223.6.6.6
-      - https://dns.alidns.com/dns-query
-      - tls://dns.alidns.com
       - 119.28.28.28
+      - 114.114.115.115
+      - https://dns.alidns.com/dns-query
       - https://doh.pub/dns-query
       - https://dns.pub/dns-query
-      - tls://dot.pub
-      - 114.114.115.115
     geosite:geolocation-!cn:
-      - tls://8.8.8.8:853
-      - tls://1.1.1.1:853
-      - https://dns.cloudflare.com/dns-query
-      - tls://1.0.0.1:853
-      - tls://1dot1dot1dot1.cloudflare-dns.com
-      - tls://8.8.4.4:853
-      - https://dns.google/dns-query
+      - tls://8.8.8.8
+      - tls://1.1.1.1
+      - tls://8.8.4.4
+      - tls://1.0.0.1
       - tls://dns.google
+      - tls://1dot1dot1dot1.cloudflare-dns.com
+      - https://dns.google/dns-query
+      - https://dns.cloudflare.com/dns-query
   fallback-filter:
     domain:
       - '+.google.com'
