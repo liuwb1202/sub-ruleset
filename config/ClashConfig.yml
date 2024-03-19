@@ -26,6 +26,16 @@ dns:
     '+.google.com': '8.8.8.8'
     '+.youtube.com': '8.8.8.8'
     '+.cloudflare.com': '1.1.1.1'
+    geosite:cn,private,apple:
+      - tls://dns.alidns.com
+      - tls://dot.pub
+      - https://dns.alidns.com/dns-query
+      - https://doh.pub/dns-query
+      - https://dns.pub/dns-query
+    geosite:geolocation-!cn:
+      - tls://8.8.8.8:853
+      - tls://1.1.1.1:853
+      - tls://dns.google:853
   fallback-filter:
     domain:
       - '+.google.com'
