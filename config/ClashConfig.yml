@@ -16,10 +16,8 @@ dns:
   fallback:
     - tls://dns.google
     - tls://1dot1dot1dot1.cloudflare-dns.com
-    - tls://dns.quad9.net
     - https://dns.google/dns-query
     - https://cloudflare-dns.com/dns-query
-    - https://dns.quad9.net/dns-query
   nameserver-policy:
     '+.baidu.com': 'tls://dns.alidns.com'
     '+.qq.com': 'tls://dot.pub'
@@ -33,10 +31,8 @@ dns:
     geosite:geolocation-!cn:
       - tls://dns.google
       - tls://1dot1dot1dot1.cloudflare-dns.com
-      - tls://dns.quad9.net
       - https://dns.google/dns-query
       - https://cloudflare-dns.com/dns-query
-      - https://dns.quad9.net/dns-query
   fallback-filter:
     domain:
       - '+.google.com'
