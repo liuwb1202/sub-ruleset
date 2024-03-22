@@ -17,6 +17,20 @@ dns:
     - tls://8.8.8.8
     - tls://1.1.1.1
     - tls://9.9.9.9
+  nameserver-policy:
+    '+.baidu.com': 'tls://dns.alidns.com'
+    '+.qq.com': 'tls://dot.pub'
+    '+.tencent.com': 'tls://dot.pub'
+    '+.aliyun.com': 'tls://dns.alidns.com'
+    geosite:cn,private,apple:
+      - tls://dns.alidns.com
+      - tls://dot.pub
+      - https://dns.alidns.com/dns-query
+      - https://doh.pub/dns-query
+    geosite:geolocation-!cn:
+      - tls://8.8.8.8
+      - tls://1.1.1.1
+      - tls://9.9.9.9
   fallback-filter:
     geoip: true
     geoip-code: CN
