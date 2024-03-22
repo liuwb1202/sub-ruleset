@@ -14,6 +14,9 @@ dns:
   fallback:
     - tls://8.8.8.8
     - tls://1.1.1.1
+    - tls://9.9.9.9
+    - tls://dns.google
+    - tls://1dot1dot1dot1.cloudflare-dns.com
   nameserver-policy:
     '+.baidu.com': 'tls://dns.alidns.com'
     '+.qq.com': 'tls://dot.pub'
@@ -27,6 +30,9 @@ dns:
     geosite:geolocation-!cn:
       - tls://8.8.8.8
       - tls://1.1.1.1
+      - tls://9.9.9.9
+      - tls://dns.google
+      - tls://1dot1dot1dot1.cloudflare-dns.com
   fallback-filter:
     domain:
       - '+.google.com'
