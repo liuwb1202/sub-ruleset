@@ -40,10 +40,6 @@ DOMAIN-SUFFIX,miyun9876.xyz
 DOMAIN-SUFFIX,mirrors.aliyun.com
 DOMAIN-SUFFIX,mirror.aliyuncs.com
 
-# 端口
-#ftp
-DOMAIN-KEYWORD,ftp
-DOMAIN-KEYWORD,sftp
 DST-PORT,22
 # ftp
 DST-PORT,21
