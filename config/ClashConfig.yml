@@ -8,15 +8,23 @@ dns:
     - 114.114.114.114
     - 8.8.8.8
     - 1.1.1.1
+    - 9.9.9.9
   nameserver:
     - tls://dns.alidns.com
     - tls://dot.pub
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
   fallback:
-    - tls://8.8.8.8
-    - tls://1.1.1.1
-    - tls://9.9.9.9
+    - tls://dns.google
+    - tls://1dot1dot1dot1.cloudflare-dns.com
+    - tls://dns.quad9.net
+    - tls://dns.adguard-dns.com
+    - tls://dns.opendns.com
+    - https://dns.google/dns-query
+    - https://dns.cloudflare.com/dns-query
+    - https://dns.quad9.net/dns-query
+    - https://dns.adguard-dns.com/dns-query
+    - https://doh.opendns.com/dns-query
   fallback-filter:
     geoip: true
     geoip-code: CN
