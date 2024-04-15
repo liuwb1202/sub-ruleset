@@ -6,8 +6,9 @@ dns:
     - 223.5.5.5
     - 119.29.29.29
     - 114.114.114.114
-    - 8.8.8.8
-    - 1.1.1.1
+    - tls://8.8.8.8
+    - tls://1.1.1.1
+    - tls://9.9.9.9
   nameserver:
     - tls://dns.alidns.com
     - tls://dot.pub
@@ -17,6 +18,17 @@ dns:
     - tls://8.8.8.8
     - tls://1.1.1.1
     - tls://9.9.9.9
+    - tls://dns.google
+    - tls://cloudflare-dns.com
+    - tls://dns.quad9.net
+    - https://dns.google/dns-query
+    - https://1dot1dot1dot1.cloudflare-dns.com
+    - https://dns.quad9.net/dns-query
+  nameserver-policy:
+    '+.baidu.com': 'tls://dns.alidns.com'
+    '+.qq.com': 'tls://dot.pub'
+    '+.tencent.com': 'tls://dot.pub'
+    '+.aliyun.com': 'tls://dns.alidns.com'
   fallback-filter:
     geoip: true
     geoip-code: CN
