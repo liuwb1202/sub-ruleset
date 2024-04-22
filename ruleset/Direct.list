@@ -1,13 +1,22 @@
+# 直连端口号
 DST-PORT,22
 DST-PORT,21
 
-# self的服务器
+# 服务器
 IP-CIDR,1.15.43.161/32,no-resolve
 IP-CIDR,47.98.236.211/32,no-resolve
 IP-CIDR,121.40.201.25/32,no-resolve
 
-#self 代码仓库
+#代码仓库
 DOMAIN-SUFFIX,gitee.com
+DOMAIN-SUFFIX,gitee.io
+DOMAIN-SUFFIX,gitlab.cn
+DOMAIN,codeup.aliyun.com
+DOMAIN,coding.net
+
+# 阿里云
+DOMAIN-SUFFIX,mirrors.aliyun.com
+DOMAIN-SUFFIX,mirror.aliyuncs.com
 
 #学习平台
 DOMAIN-SUFFIX,51data.org
@@ -37,11 +46,6 @@ IP-CIDR,46.137.239.213/32,no-resolve
 
 #接码平台
 DOMAIN-SUFFIX,miyun9876.xyz
-
-# 阿里云
-DOMAIN-SUFFIX,mirrors.aliyun.com
-DOMAIN-SUFFIX,mirror.aliyuncs.com
-
 
 # 雷蛇
 DOMAIN-KEYWORD,razer
