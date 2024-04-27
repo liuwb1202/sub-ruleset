@@ -166,5 +166,3 @@ dns:
     - www.bilibili.com
     - api.bilibili.com
     - a.w.bilicdn1.com
-clash-for-android:
-  append-system-dns: false
