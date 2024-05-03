@@ -14,7 +14,6 @@ dns:
     - tls://dot.pub
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
-    - https://doh.360.cn/dns-query
   fallback:
     - tls://dns.google
     - tls://1dot1dot1dot1.cloudflare-dns.com
