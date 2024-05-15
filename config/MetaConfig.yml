@@ -26,10 +26,6 @@ dns:
     - https://dns.adguard-dns.com/dns-query
     - https://doh.opendns.com/dns-query
   nameserver-policy:
-    '+.baidu.com': 'tls://dns.alidns.com'
-    '+.qq.com': 'tls://dot.pub'
-    '+.tencent.com': 'tls://dot.pub'
-    '+.aliyun.com': 'tls://dns.alidns.com'
     geosite:cn,private,apple:
       - tls://dns.alidns.com
       - tls://dot.pub
