@@ -82,6 +82,11 @@ dns:
       - "+.msftncsi.com"
       - "+.v2ex.com"
       - "+.linkedin.com"
+      - "+.pubpeer.com"
+      - "+.nih.gov"
+      - "+.scopus.com"
+      - "+.ithenticate.com"
+      - "+.chatgpt.com"
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
     - "*.lan"
