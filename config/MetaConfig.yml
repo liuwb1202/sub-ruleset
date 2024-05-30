@@ -38,7 +38,7 @@ dns:
       - tls://dot.pub
       - https://dns.alidns.com/dns-query
       - https://doh.pub/dns-query
-    geosite:geolocation-!cn:
+    geosite:geolocation-!cn,gfw:
       - tls://dns.google
       - tls://1dot1dot1dot1.cloudflare-dns.com
       - tls://dns.quad9.net
@@ -66,11 +66,7 @@ dns:
     - https://doh.opendns.com/dns-query
   fallback-filter:
     geoip: true
-    # 解析为CN的ip直接配置的国家的结果会直接采用，否则将采用 fallback结果
     geoip-code: CN
-    # 配置在gfw名单走fallback
-    geosite:
-      - gfw
     ipcidr:
       - 0.0.0.0/8
       - 10.0.0.0/8
