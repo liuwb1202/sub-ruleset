@@ -1,3 +1,10 @@
+mode: rule
+# 静默，不输出
+log-level: silent
+# 是否允许内核接受 IPv6 流量
+ipv6: false
+unified-delay: true
+tcp-concurrent: true
 dns:
   enable: true
   prefer-h3: true
@@ -42,15 +49,43 @@ dns:
       - https://dns.quad9.net/dns-query
       - https://dns.adguard-dns.com/dns-query
       - https://doh.opendns.com/dns-query
+  proxy-server-nameserver:
+    - tls://dns.alidns.com
+    - tls://dot.pub
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    - tls://dns.google
+    - tls://1dot1dot1dot1.cloudflare-dns.com
+    - tls://dns.quad9.net
+    - tls://dns.adguard-dns.com
+    - tls://dns.opendns.com
+    - https://dns.google/dns-query
+    - https://dns.cloudflare.com/dns-query
+    - https://dns.quad9.net/dns-query
+    - https://dns.adguard-dns.com/dns-query
+    - https://doh.opendns.com/dns-query
   fallback-filter:
     geoip: true
+    # 解析为CN的ip直接配置的国家的结果会直接采用，否则将采用 fallback结果
     geoip-code: CN
+    # 配置在gfw名单走fallback
     geosite:
       - gfw
     ipcidr:
+      - 0.0.0.0/8
+      - 10.0.0.0/8
+      - 100.64.0.0/10
+      - 127.0.0.0/8
+      - 169.254.0.0/16
+      - 172.16.0.0/12
+      - 192.0.0.0/24
+      - 192.0.2.0/24
+      - 192.168.0.0/16
+      - 198.18.0.0/15
+      - 198.51.100.0/24
+      - 203.0.113.0/24
+      - 224.0.0.0/4
       - 240.0.0.0/4
-      - 0.0.0.0/32
-      - 127.0.0.1/32
     domain:
       - '+.google.com'
       - '+.facebook.com'
