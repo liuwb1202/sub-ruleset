@@ -25,7 +25,6 @@ dns:
     - https://dns.quad9.net/dns-query
     - https://dns.adguard-dns.com/dns-query
     - https://doh.opendns.com/dns-query
-  nameserver-policy:
   fallback-filter:
     geoip: true
     geoip-code: CN
