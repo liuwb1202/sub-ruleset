@@ -30,6 +30,7 @@ dns:
   enable: true
   # 开启 DoH 支持 HTTP/3，将并发尝试
   prefer-h3: true
+  enhanced-mode: fake-ip
   # 禁用ipv6
   ipv6: false
   # 查询 hosts
