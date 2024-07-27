@@ -246,3 +246,10 @@ dns:
     - www.bilibili.com
     - api.bilibili.com
     - a.w.bilicdn1.com
+tun:
+  enable: true
+  stack: mixed
+  auto-detect-interface: true
+  auto-route: true
+  strict-route: true
+  auto-redirect: true
