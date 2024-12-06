@@ -17,8 +17,6 @@ geodata-loader: standard
 geodata-mode: false
 # 域名嗅探
 sniffer:
-  # 是否启用sniffer
-  enable: true
   # 对 redir-host 类型识别的流量进行强制嗅探
   force-dns-mapping: true
   # 对所有未获取到域名的流量进行强制嗅探
