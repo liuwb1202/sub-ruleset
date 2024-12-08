@@ -9,7 +9,6 @@ DOMAIN-SUFFIX,msedgeextensions.sf.tlu.dl.delivery.mp.microsoft.com
 DOMAIN-SUFFIX,xn--ngstr-lra8j.com
 DOMAIN-SUFFIX,services.googleapis.cn
 DOMAIN-SUFFIX,element-plus-admin.cn
-DOMAIN-SUFFIX,steamcommunity.com
 # dns只走代理
 DOMAIN,dns.google
 DOMAIN,1dot1dot1dot1.cloudflare-dns.com
