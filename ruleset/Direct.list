@@ -3,7 +3,6 @@ DST-PORT,22
 DST-PORT,21
 
 # 服务器
-IP-CIDR,1.15.43.161/32,no-resolve
 IP-CIDR,47.98.236.211/32,no-resolve
 IP-CIDR,121.40.201.25/32,no-resolve
 
@@ -24,25 +23,6 @@ DOMAIN-SUFFIX,ruike1.com
 
 #飞书
 DOMAIN-SUFFIX,feishu.cn
-
-#IMR Press
-#DOMAIN-SUFFIX,propub.com
-#DOMAIN-SUFFIX,imrpress.com
-#DOMAIN-SUFFIX,imrpress.tech
-#DOMAIN-SUFFIX,venus-pro-bucket.s3.ap-southeast-1.amazonaws.com
-#DOMAIN-SUFFIX,venus-pro-bucket.s3-accelerate.amazonaws.com
-#DOMAIN-SUFFIX,venus-test-bucket.s3-accelerate.amazonaws.com
-#DOMAIN-SUFFIX,venus-sim-bucket.s3-accelerate.amazonaws.com
-#DOMAIN-SUFFIX,venus-dev-bucket.s3.ap-southeast-1.amazonaws.com
-#DOMAIN-SUFFIX,d3unwgdk2ehprc.cloudfront.net
-#DOMAIN-SUFFIX,dla0op9ux209f.cloudfront.net
-#DOMAIN-SUFFIX,d2s1zyw2faj392.cloudfront.net
-#DOMAIN-SUFFIX,api.propub.com
-#DOMAIN-SUFFIX,api.imrpress.com
-IP-CIDR,18.138.57.128/32,no-resolve
-IP-CIDR,175.41.133.171/32,no-resolve
-IP-CIDR,52.221.111.0/32,no-resolve
-IP-CIDR,46.137.239.213/32,no-resolve
 
 #接码平台
 DOMAIN-SUFFIX,miyun9876.xyz
