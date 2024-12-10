@@ -59,6 +59,10 @@ dns:
     - https://doh.opendns.com/dns-query
   # 专用于节点域名解析的 DNS 服务器，非必要配置项
   proxy-server-nameserver:
+    - tls://dns.alidns.com
+    - tls://dot.pub
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
     - tls://dns.google
     - tls://1dot1dot1dot1.cloudflare-dns.com
     - tls://dns.opendns.com
