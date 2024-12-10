@@ -1,10 +1,10 @@
 # 直连端口号
-DST-PORT,22
-DST-PORT,21
+#DST-PORT,22
+#DST-PORT,21
 
 # 服务器
-IP-CIDR,47.98.236.211/32,no-resolve
-IP-CIDR,121.40.201.25/32,no-resolve
+#IP-CIDR,47.98.236.211/32,no-resolve
+#IP-CIDR,121.40.201.25/32,no-resolve
 
 #代码仓库
 DOMAIN-SUFFIX,gitee.com
