@@ -57,6 +57,18 @@ dns:
     - https://dns.google/dns-query
     - https://dns.cloudflare.com/dns-query
     - https://doh.opendns.com/dns-query
+  # 专用于节点域名解析的 DNS 服务器，非必要配置项
+  proxy-server-nameserver:
+    - tls://dns.alidns.com
+    - tls://dot.pub
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    - tls://dns.google
+    - tls://1dot1dot1dot1.cloudflare-dns.com
+    - tls://dns.opendns.com
+    - https://dns.google/dns-query
+    - https://dns.cloudflare.com/dns-query
+    - https://doh.opendns.com/dns-query
   # 使用dns的策略
   nameserver-policy:
     #geosite查询出来的国内、局域网、苹果使用国内的dns
