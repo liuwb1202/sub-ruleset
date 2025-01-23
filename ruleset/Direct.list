@@ -3,9 +3,10 @@
 #DST-PORT,21
 
 # 服务器
-#IP-CIDR,47.98.236.211/32,no-resolve
-#IP-CIDR,121.40.201.25/32,no-resolve
 IP-CIDR,47.245.104.214/32,no-resolve
+IP-CIDR,47.84.73.246/32,no-resolve
+IP-CIDR,142.171.30.95/32,no-resolve
+IP-CIDR,104.156.140.167/32,no-resolve
 #代码仓库
 DOMAIN-SUFFIX,gitee.com
 DOMAIN-SUFFIX,gitee.io
