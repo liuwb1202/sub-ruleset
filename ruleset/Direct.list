@@ -1,6 +1,7 @@
 # 直连端口号
 DST-PORT,22,no-resolve
 DST-PORT,21,no-resolve
+DST-PORT,47,no-resolve
 DST-PORT,1723,no-resolve
 #VPN
 DOMAIN,vpn.imrpress.tech,no-resolve
