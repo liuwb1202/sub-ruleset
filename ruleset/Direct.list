@@ -1,3 +1,4 @@
+DOMAIN,vpn.imrpress.tech
 # 直连端口号
 DST-PORT,22
 DST-PORT,21
