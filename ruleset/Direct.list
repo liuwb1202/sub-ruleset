@@ -1,9 +1,9 @@
-DOMAIN,vpn.imrpress.tech
 # 直连端口号
 DST-PORT,22
 DST-PORT,21
 DST-PORT,1723
-
+#VPN
+DOMAIN,vpn.imrpress.tech
 # 服务器
 IP-CIDR,47.245.104.214/32,no-resolve
 IP-CIDR,47.84.73.246/32,no-resolve
