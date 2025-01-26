@@ -1,6 +1,6 @@
-DOMAIN-SUFFIX,hotjar.com,no-resolve
-DOMAIN-SUFFIX,www.google-analytics.com,no-resolve
-DOMAIN-SUFFIX,incoming.telemetry.mozilla.org,no-resolve
-DOMAIN-SUFFIX,ocsp.digicert.com,no-resolve
-DOMAIN-SUFFIX,usermaven.com,no-resolve
-DOMAIN-SUFFIX,update.googleapis.com,no-resolve
+DOMAIN-SUFFIX,hotjar.com
+DOMAIN-SUFFIX,www.google-analytics.com
+DOMAIN-SUFFIX,incoming.telemetry.mozilla.org
+DOMAIN-SUFFIX,ocsp.digicert.com
+DOMAIN-SUFFIX,usermaven.com
+DOMAIN-SUFFIX,update.googleapis.com
