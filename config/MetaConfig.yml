@@ -44,8 +44,10 @@ dns:
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
     - tls://1dot1dot1dot1.cloudflare-dns.com
+    - tls://dns.google
     - tls://dns.opendns.com
     - https://dns.cloudflare.com/dns-query
+    - https://dns.google/dns-query
     - https://doh.opendns.com/dns-query
   # DNS 主要域名配置
   # 支持 UDP，TCP，DoT，DoH，DoQ
@@ -60,8 +62,10 @@ dns:
   # 确保配置 fallback 时能够正常查询
   fallback:
     - tls://1dot1dot1dot1.cloudflare-dns.com
+    - tls://dns.google
     - tls://dns.opendns.com
     - https://dns.cloudflare.com/dns-query
+    - https://dns.google/dns-query
     - https://doh.opendns.com/dns-query
   # 使用dns的策略
   nameserver-policy:
@@ -74,8 +78,10 @@ dns:
     # geosite查询出来的国外,长城名单使用国外的dns
     geosite:geolocation-!cn,gfw:
       - tls://1dot1dot1dot1.cloudflare-dns.com
+      - tls://dns.google
       - tls://dns.opendns.com
       - https://dns.cloudflare.com/dns-query
+      - https://dns.google/dns-query
       - https://doh.opendns.com/dns-query
   # 配置 fallback 使用条件
   fallback-filter:
@@ -104,6 +110,7 @@ dns:
       - '+.google.com'
       - '+.facebook.com'
       - '+.twitter.com'
+      - '+.x.com'
       - '+.youtube.com'
       - '+.xn--ngstr-lra8j.com'
       - '+.google.cn'
