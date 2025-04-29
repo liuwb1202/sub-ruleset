@@ -12,6 +12,8 @@ DST-PORT,1723
 
 #VPN
 DOMAIN,vpn.imrpress.tech
+DOMAIN-SUFFIX,s3-accelerate.amazonaws.com
+DOMAIN-SUFFIX,oss-accelerate.aliyuncs.com
 
 #代码仓库
 DOMAIN-SUFFIX,gitee.com
