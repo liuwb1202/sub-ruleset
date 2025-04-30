@@ -33,7 +33,7 @@ dns:
     - 'https://dns.google/dns-query'
     - 'https://doh.opendns.com/dns-query'
   nameserver-policy:
-    geosite:cn,private,apple:
+    geosite:private,onedrive,microsoft@cn,apple@cn,steam@cn,jetbrains@cn,category-games@cn,cn:
       - 'tls://dns.alidns.com'
       - 'tls://dot.pub'
       - 'https://dns.alidns.com/dns-query'
