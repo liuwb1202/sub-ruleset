@@ -33,7 +33,6 @@ dns:
     - 'https://dns.google/dns-query#PROXY&h3=true'
     - 'https://doh.opendns.com/dns-query#PROXY&h3=true'
   nameserver-policy:
-    "+.lan,+.in-addr.arpa": system
     geosite:private,onedrive,microsoft@cn,apple@cn,steam@cn,google@cn,jetbrains@cn,category-games@cn,cn:
       - 'tls://dns.alidns.com'
       - 'tls://dot.pub'
