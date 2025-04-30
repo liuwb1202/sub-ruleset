@@ -23,21 +23,21 @@ dns:
   proxy-server-nameserver:
     - 'tls://dns.alidns.com'
     - 'tls://dot.pub'
-    - 'https://dns.alidns.com/dns-query#h3=true'
-    - 'https://doh.pub/dns-query#h3=true'
+    - 'https://dns.alidns.com/dns-query'
+    - 'https://doh.pub/dns-query'
   nameserver:
-    - 'tls://1dot1dot1dot1.cloudflare-dns.com#PROXY'
-    - 'tls://dns.google#PROXY'
-    - 'tls://dns.opendns.com#PROXY'
-    - 'https://dns.cloudflare.com/dns-query#PROXY&h3=true'
-    - 'https://dns.google/dns-query#PROXY&h3=true'
-    - 'https://doh.opendns.com/dns-query#PROXY&h3=true'
+    - 'tls://1dot1dot1dot1.cloudflare-dns.com'
+    - 'tls://dns.google'
+    - 'tls://dns.opendns.com'
+    - 'https://dns.cloudflare.com/dns-query'
+    - 'https://dns.google/dns-query'
+    - 'https://doh.opendns.com/dns-query'
   nameserver-policy:
     geosite:cn,private,apple:
       - 'tls://dns.alidns.com'
       - 'tls://dot.pub'
-      - 'https://dns.alidns.com/dns-query#h3=true'
-      - 'https://doh.pub/dns-query#h3=true'
+      - 'https://dns.alidns.com/dns-query'
+      - 'https://doh.pub/dns-query'
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
     - "*.lan"
