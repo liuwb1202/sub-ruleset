@@ -21,6 +21,8 @@ DOMAIN-SUFFIX,gitee.io
 DOMAIN-SUFFIX,gitlab.cn
 DOMAIN,codeup.aliyun.com
 DOMAIN,coding.net
+DOMAIN-SUFFIX,sciltp.com
+DOMAIN-SUFFIX,accscience.com
 
 # 阿里云
 DOMAIN-SUFFIX,mirrors.aliyun.com
