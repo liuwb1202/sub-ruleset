@@ -143,6 +143,7 @@ dns:
     - www.bilibili.com
     - api.bilibili.com
     - a.w.bilicdn1.com
+    - "+.market.xiaomi.com"
 tun:
   enable: true
   stack: mixed
