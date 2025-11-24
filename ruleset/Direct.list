@@ -10,6 +10,8 @@ DST-PORT,21
 DST-PORT,47
 DST-PORT,1723
 
+DOMAIN,jenkins.try123.co
+
 #VPN
 DOMAIN,vpn.imrpress.tech
 DOMAIN-SUFFIX,s3-accelerate.amazonaws.com
