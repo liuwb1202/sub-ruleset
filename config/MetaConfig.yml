@@ -1,6 +1,6 @@
 mode: rule
 log-level: silent
-ipv6: false
+ipv6: true
 tcp-concurrent: true
 keep-alive-interval: 30
 unified-delay: true
