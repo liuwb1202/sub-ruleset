@@ -143,7 +143,9 @@ dns:
     - www.bilibili.com
     - api.bilibili.com
     - a.w.bilicdn1.com
-    - "+.market.xiaomi.com"
+    - "+.hydoffice.com"
+    - "+.imrpress.tech"
+    - a113.pubooo.cloud
 tun:
   enable: true
   stack: mixed

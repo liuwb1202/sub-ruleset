@@ -1,8 +1,6 @@
-# 服务器
+# IP
 IP-CIDR,47.245.104.214/32,no-resolve
-IP-CIDR,47.84.73.246/32,no-resolve
-IP-CIDR,142.171.30.95/32,no-resolve
-IP-CIDR,104.156.140.167/32,no-resolve
+IP-CIDR,47.236.120.206/32,no-resolve
 IP-CIDR,74.48.158.164/32,no-resolve
 IP-CIDR,38.55.134.82/32,no-resolve
 
@@ -12,10 +10,11 @@ DST-PORT,21
 DST-PORT,47
 DST-PORT,1723
 
+# VPN
+DOMAIN,a113.pubooo.cloud
 DOMAIN,jenkins.try123.co
-
-#VPN
-DOMAIN,vpn.imrpress.tech
+DOMAIN-SUFFIX,imrpress.tech
+DOMAIN-SUFFIX,hydoffice.com
 DOMAIN-SUFFIX,s3-accelerate.amazonaws.com
 DOMAIN-SUFFIX,oss-accelerate.aliyuncs.com
 
@@ -88,7 +87,6 @@ DOMAIN-SUFFIX,algolia.net
 DOMAIN-SUFFIX,mozilla.org
 DOMAIN-SUFFIX,mozilla.com
 DOMAIN-SUFFIX,bafangcn.vip
-DOMAIN,a113.pubooo.cloud
 DOMAIN-SUFFIX,sub.xeton.dev
 DOMAIN-SUFFIX,nelreports.net
 DOMAIN-SUFFIX,ping.sx
