@@ -37,32 +37,23 @@ sniffer:
     - 2a0a:f280:203::/48
 dns:
   enable: true
-  prefer-h3: true
   enhanced-mode: fake-ip
   ipv6: false
   use-hosts: true
+  prefer-h3: false
   default-nameserver:
     - 223.5.5.5
     - 119.29.29.29
-    - 114.114.114.114
   proxy-server-nameserver:
     - 'tls://dns.alidns.com'
     - 'tls://dot.pub'
-    - 'https://dns.alidns.com/dns-query'
-    - 'https://doh.pub/dns-query'
   nameserver:
-    - 'tls://1dot1dot1dot1.cloudflare-dns.com'
-    - 'tls://dns.google'
-    - 'tls://dns.opendns.com'
     - 'https://dns.cloudflare.com/dns-query'
     - 'https://dns.google/dns-query'
-    - 'https://doh.opendns.com/dns-query'
   nameserver-policy:
     geosite:private,onedrive,microsoft@cn,apple@cn,steam@cn,jetbrains@cn,category-games@cn,cn:
       - 'tls://dns.alidns.com'
       - 'tls://dot.pub'
-      - 'https://dns.alidns.com/dns-query'
-      - 'https://doh.pub/dns-query'
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
     - "*.lan"
