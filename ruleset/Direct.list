@@ -12,6 +12,7 @@ DST-PORT,1723
 
 # VPN
 DOMAIN,a113.pubooo.cloud
+DOMAIN,zconnect.cn
 DOMAIN,jenkins.try123.co
 DOMAIN-SUFFIX,komari.homelab.plus
 DOMAIN-SUFFIX,imrpress.tech
