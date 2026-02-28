@@ -67,6 +67,11 @@ dns:
       - 'tls://dot.pub'
       - 'https://dns.alidns.com/dns-query'
       - 'https://doh.pub/dns-query'
+    "*.zconnect.cn":
+      - 'tls://dns.alidns.com'
+      - 'tls://dot.pub'
+      - 'https://dns.alidns.com/dns-query'
+      - 'https://doh.pub/dns-query'
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
     - "*.lan"
