@@ -4,6 +4,8 @@ IP-CIDR,47.236.120.206/32,no-resolve
 IP-CIDR,74.48.6.117/32,no-resolve
 IP-CIDR,38.55.134.82/32,no-resolve
 IP-CIDR,82.40.40.186/32,no-resolve
+IP-CIDR,47.84.21.105/32,no-resolve
+IP-CIDR,47.84.4.59/32,no-resolve
 
 # 直连端口号
 DST-PORT,22
