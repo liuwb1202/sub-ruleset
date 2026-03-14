@@ -10,17 +10,24 @@ sniffer:
   enable: true
   force-dns-mapping: true
   parse-pure-ip: true
-  override-destination: false
+  override-destination: true
   sniff:
+    TLS:
+      ports:
+        - 443
+    QUIC:
+      ports:
+        - 443
     HTTP:
       ports:
         - 80
         - 443
-      override-destination: false
-    TLS:
-      ports:
-        - 443
+      override-destination: true
   skip-domain:
+    - Mijia Cloud
+    - dlg.io.mi.com
+    - +.oray.com
+    - +.sunlogin.net
     - +.push.apple.com
   skip-dst-address:
     - 91.105.192.0/23
@@ -35,6 +42,11 @@ sniffer:
     - 2001:b28:f23c::/47
     - 2001:b28:f23f::/48
     - 2a0a:f280:203::/48
+  force-domain:
+    - "+.netflix.com"
+    - "+.nflxvideo.net"
+    - "+.amazonaws.com"
+    - "+.media.dssott.com"
 dns:
   enable: true
   prefer-h3: true
