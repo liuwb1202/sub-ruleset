@@ -2,10 +2,11 @@ mode: rule
 log-level: silent
 ipv6: false
 tcp-concurrent: true
+global-client-fingerprint: chrome
 keep-alive-interval: 30
 unified-delay: true
 geodata-loader: standard
-geodata-mode: false
+geodata-mode: true
 sniffer:
   enable: true
   force-dns-mapping: true
@@ -35,6 +36,7 @@ dns:
   default-nameserver:
     - 223.5.5.5
     - 119.29.29.29
+    - 114.114.114.114
   proxy-server-nameserver:
     - 'tls://dns.alidns.com'
     - 'tls://dot.pub'
