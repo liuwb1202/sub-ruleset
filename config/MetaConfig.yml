@@ -12,7 +12,7 @@ mode: rule
 log-level: silent
 
 # 是否允许局域网内其他设备连接 (如作软路由共享再改为 true)
-allow-lan: false
+allow-lan: true
 
 # IPv6 总开关, 国内网络环境建议关闭, 避免双栈路由问题
 ipv6: false
