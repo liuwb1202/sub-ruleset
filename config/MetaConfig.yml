@@ -90,10 +90,9 @@ dns:
 
   # 未命中策略的域名: 加密国内 DNS, 不使用明文 UDP DNS
   nameserver:
-    - 'https://dns.alidns.com/dns-query'
-    - 'https://doh.pub/dns-query'
-    - 'tls://223.5.5.5:853'
-    - 'tls://1.12.12.12:853'
+    - 'https://dns.google/dns-query#🚀 节点选择'
+    - 'https://dns.cloudflare.com/dns-query#🚀 节点选择'
+    - 'tls://1.1.1.1:853#🚀 节点选择'
 
   # 域名 → DNS 映射, 优先级高于 nameserver
   nameserver-policy:
