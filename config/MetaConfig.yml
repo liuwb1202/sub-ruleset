@@ -1,15 +1,52 @@
+# ============================================================
+# Mihomo (Clash.Meta) 基础配置模板
+# 供 subconverter 作为 clash_rule_base 使用
+# 代理 / 策略组 / 规则由对应 .ini 模板生成
+# 文档: https://wiki.metacubex.one/config/
+# ============================================================
+
+# 运行模式: rule 规则匹配
 mode: rule
+
+# 日志级别: silent 静默, 排障时可临时改为 info
 log-level: silent
+
+# 是否允许局域网内其他设备连接 (如作软路由共享再改为 true)
+allow-lan: false
+
+# IPv6 总开关, 国内网络环境建议关闭, 避免双栈路由问题
 ipv6: false
+
+# TCP 并发连接所有 IP, 使用最快完成握手的连接
 tcp-concurrent: true
+
+# 全局 TLS 指纹, 降低流量被特征识别的风险
 global-client-fingerprint: chrome
+
 keep-alive-interval: 30
+
+# 延迟计算方式: 去除握手等额外耗时
 unified-delay: true
-geodata-loader: standard
+
+# 外部控制 API, 供面板 (metacubexd / yacd) 连接
+external-controller: 127.0.0.1:9090
+
+# 持久化: 重启后保留策略组选择与 fake-ip 映射
+profile:
+  store-selected: true
+  store-fake-ip: true
+
+# ---- GEO 数据库 ----
+# true 使用 .dat 格式 (geoip.dat / geosite.dat)
 geodata-mode: true
+# standard: 标准加载器; memconservative: 低内存设备
+geodata-loader: standard
+# ---- 域名嗅探 ----
+# 从 IP 直连流量中识别域名, 配合规则正确分流
 sniffer:
   enable: true
   force-dns-mapping: true
+  # 纯 IP 流量嗅探易误判, 关闭更稳定
   parse-pure-ip: false
   override-destination: true
   sniff:
@@ -21,51 +58,66 @@ sniffer:
         - 80
       override-destination: true
   skip-domain:
-    - Mijia Cloud
-    - dlg.io.mi.com
+    # 米家 / 向日葵 / 蒲公英 (贝锐): 智能家居与远控, 保持直连不走嗅探
+    - +.mi.com
     - +.oray.com
     - +.sunlogin.net
+    # Apple 推送
     - +.push.apple.com
+    # 国内域名无需嗅探
     - geosite:cn
+
 dns:
   enable: true
   prefer-h3: true
-  enhanced-mode: fake-ip
   ipv6: false
   use-hosts: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  # DNS 缓存: ARC 算法, 提升高频域名解析命中率
+  cache-algorithm: arc
+
+  # 引导 DNS: 使用 IP 形式的加密 DNS, 避免以明文 UDP/53 解析加密 DNS 主机名
   default-nameserver:
-    - 223.5.5.5
-    - 119.29.29.29
-    - 114.114.114.114
+    - 'tls://223.5.5.5:853'
+    - 'tls://1.12.12.12:853'
+
+  # 解析代理服务器域名: 代理建立前必须直连, 使用加密国内 DNS
   proxy-server-nameserver:
-    - 'tls://dns.alidns.com'
-    - 'tls://dot.pub'
     - 'https://dns.alidns.com/dns-query'
     - 'https://doh.pub/dns-query'
+    - 'tls://223.5.5.5:853'
+
+  # 未命中策略的域名: 加密国内 DNS, 不使用明文 UDP DNS
   nameserver:
-    - 'tls://1dot1dot1dot1.cloudflare-dns.com'
-    - 'tls://dns.google'
-    - 'tls://dns.opendns.com'
-    - 'https://dns.cloudflare.com/dns-query'
-    - 'https://dns.google/dns-query'
-    - 'https://doh.opendns.com/dns-query'
+    - 'https://dns.alidns.com/dns-query'
+    - 'https://doh.pub/dns-query'
+    - 'tls://223.5.5.5:853'
+    - 'tls://1.12.12.12:853'
+
+  # 域名 → DNS 映射, 优先级高于 nameserver
   nameserver-policy:
-    geosite:private,onedrive,microsoft@cn,apple@cn,steam@cn,jetbrains@cn,category-games@cn,cn:
-      - 'tls://dns.alidns.com'
-      - 'tls://dot.pub'
+    # 国内 / 私有网络 / 国内优化的服务 → 加密国内 DNS
+    "geosite:private,onedrive,microsoft@cn,apple@cn,steam@cn,jetbrains@cn,category-games@cn,cn":
       - 'https://dns.alidns.com/dns-query'
       - 'https://doh.pub/dns-query'
-    "*.homelab.plus":
-      - 'tls://dns.alidns.com'
-      - 'tls://dot.pub'
+      - 'tls://223.5.5.5:853'
+    # 国外 / GFW 域名 → 加密国外 DNS, 通过代理组访问
+    "geosite:geolocation-!cn,gfw":
+      - 'https://dns.google/dns-query#🚀 节点选择'
+      - 'https://dns.cloudflare.com/dns-query#🚀 节点选择'
+      - 'tls://1.1.1.1:853#🚀 节点选择'
+    # 公网自建域名 → 加密国内 DNS
+    "+.homelab.plus":
       - 'https://dns.alidns.com/dns-query'
       - 'https://doh.pub/dns-query'
-    "*.zconnect.cn":
-      - 'tls://dns.alidns.com'
-      - 'tls://dot.pub'
+      - 'tls://223.5.5.5:853'
+    "+.zconnect.cn":
       - 'https://dns.alidns.com/dns-query'
       - 'https://doh.pub/dns-query'
-  fake-ip-range: 198.18.0.1/16
+      - 'tls://223.5.5.5:853'
+
+  # 不使用 fake-ip 的域名 (直接返回真实 IP)
   fake-ip-filter:
     - "*.lan"
     - "*.localdomain"
@@ -148,10 +200,14 @@ dns:
     - "+.hydoffice.com"
     - "+.imrpress.tech"
     - a113.pubooo.cloud
+
 tun:
   enable: true
-  stack: system
+  # Windows 推荐 mixed: TCP 走系统栈, UDP 走 gvisor
+  stack: mixed
+  # 劫持所有传统 DNS 查询, 防止系统 DNS 绕过 mihomo
+  dns-hijack:
+    - 0.0.0.0:53
   auto-detect-interface: true
   auto-route: true
   strict-route: true
-  auto-redirect: true
