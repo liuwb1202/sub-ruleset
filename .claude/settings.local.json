@@ -1,0 +1,21 @@
+{
+  "$schema": "https://www.schemastore.org/claude-code-settings.json",
+  "env": {
+    "DISABLE_ERROR_REPORTING": "1",
+    "DISABLE_AUTOUPDATER": "1",
+    "DISABLE_TELEMETRY": "1",
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",
+    "DISABLE_FEEDBACK_COMMAND": "1"
+  },
+  "permissions": {
+    "allow": [
+      "Bash(*)",
+      "Read(*)"
+    ],
+    "defaultMode": "bypassPermissions"
+  },
+  "effortLevel": "high",
+  "autoUpdatesChannel": "stable",
+  "skipDangerousModePermissionPrompt": true,
+  "theme": "dark"
+}
